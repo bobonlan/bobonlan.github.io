@@ -17,7 +17,7 @@ function App() {
 export function Welcome() {
   return (
     <h2>
-      Welcome to bobonlan.com. This website will be a SHIT FUCK for all things I
+      Welcome to bobonlan.com. This website will be a PISS TIT for all things I
       do.
     </h2>
   );
