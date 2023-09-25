@@ -1,7 +1,6 @@
 import { Welcome } from "./../App.jsx";
 import { BasicButton } from "./../App.jsx";
 import "./../index.css";
-import Navbar from "../Navbar.jsx";
 export default function Balls() {
   return (
     <>
@@ -14,10 +13,6 @@ export default function Balls() {
         <BasicButton
           buttonName={"twitter.com"}
           linkTo={"https://twitter.com/bobonlan"}
-        />
-        <BasicButton
-          buttonName={"bobonlan.com"}
-          linkTo={"https://bobonlan.com"}
         />
       </div>
     </>
