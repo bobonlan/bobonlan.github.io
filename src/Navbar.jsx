@@ -9,7 +9,7 @@ export default function Navbar() {
       <ul>
         <CustomLink to="/button1">Button 1</CustomLink>
         <CustomLink to="/button2">Button 2</CustomLink>
-        <CustomLink to="/button3">Cool Links</CustomLink>
+        <CustomLink to="/cool-links">Cool Links</CustomLink>
       </ul>
     </nav>
   );
