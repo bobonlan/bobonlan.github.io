@@ -1,6 +1,7 @@
 import { Welcome } from "./../App.jsx";
 import { BasicButton } from "./../App.jsx";
 import "./../index.css";
+import Navbar from "../Navbar.jsx";
 export default function Balls() {
   return (
     <>

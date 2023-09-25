@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  BrowserRouter,
+} from "react-router-dom";
 import App from "./App.jsx";
 import { Welcome } from "./App.jsx";
 import { BasicButton } from "./App.jsx";
@@ -18,7 +22,6 @@ import EditContact, { action as editAction } from "./routes/edit.jsx";
 import { action as destroyAction } from "./routes/destroy.jsx";
 import Index from "./routes/index.jsx";
 import Balls from "./routes/balls.jsx";
-import { Flex, Spacer } from "@chakra-ui/react";
 
 const router = createBrowserRouter([
   {
@@ -64,9 +67,20 @@ const router1 = createBrowserRouter([
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+{
+  /*ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {/*<RouterProvider router={router} />*/}
+    {<RouterProvider router={router} />}
     {<RouterProvider router={router1} />}
+  </React.StrictMode>
+);*/
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );

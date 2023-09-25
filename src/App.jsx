@@ -5,12 +5,27 @@ import "./App.css";
 import * as React from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Flex, Spacer } from "@chakra-ui/react";
+import Navbar from "./Navbar";
+import { optimizedAppearDataAttribute } from "framer-motion";
+import Button1 from "./routes/button1";
+import Button2 from "./routes/button2";
+import Button3 from "./routes/button3";
+import { Route, Routes } from "react-router-dom";
+import Balls from "./routes/balls";
 
-function App() {
+export function App() {
   return (
-    <ChakraProvider>
-      <h1>bobonlan.com</h1>
-    </ChakraProvider>
+    <>
+      <div className="container">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Balls />} />
+          <Route path="/button1" element={<Button1 />} />
+          <Route path="/button2" element={<Button2 />} />
+          <Route path="/button3" element={<Button3 />} />
+        </Routes>
+      </div>
+    </>
   );
 }
 
