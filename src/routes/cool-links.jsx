@@ -8,7 +8,11 @@ export default function Button3() {
         buttonName={"Music by Eian"}
         linkTo={"https://www.youtube.com/@eianklock"}
       />
-      <BasicButton buttonName={"Test Button"} />
+
+      <BasicButton
+        linkTo={"https://youtube.com/shorts/-ocizpRbV0o?si=437OPT1R_lobhtX1"}
+        buttonName={"Oh My God"}
+      />
       <BasicButton buttonName={"Test Button"} />
     </>
   );
