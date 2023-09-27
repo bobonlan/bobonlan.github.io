@@ -12,6 +12,7 @@ import Button2 from "./routes/button2";
 import Button3 from "./routes/cool-links";
 import { Route, Routes } from "react-router-dom";
 import Balls from "./routes/balls";
+import ErrorPage from "./error-page";
 
 export function App() {
   return (
@@ -19,10 +20,11 @@ export function App() {
       <div className="container">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Balls />} />
+          <Route path="/" element={<Balls />} errorElement={ErrorPage} />
           <Route path="/button1" element={<Button1 />} />
           <Route path="/button2" element={<Button2 />} />
           <Route path="/cool-links" element={<Button3 />} />
+          <Route path="/nigga" errorElement={<ErrorPage />} />
         </Routes>
       </div>
     </>
