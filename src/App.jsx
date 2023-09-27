@@ -24,7 +24,6 @@ export function App() {
           <Route path="/button1" element={<Button1 />} />
           <Route path="/button2" element={<Button2 />} />
           <Route path="/cool-links" element={<Button3 />} />
-          <Route path="/nigga" errorElement={<ErrorPage />} />
         </Routes>
       </div>
     </>
