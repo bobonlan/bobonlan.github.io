@@ -385,3 +385,7 @@ i {
   height: 750px;
   border: 2px solid black;
 }
+
+#welcome h2 {
+  background-color: white;
+}

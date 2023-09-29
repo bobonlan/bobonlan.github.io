@@ -5,7 +5,7 @@ import {
   RouterProvider,
   BrowserRouter,
 } from "react-router-dom";
-import App from "./App.jsx";
+import App, { Clock } from "./App.jsx";
 import { Welcome } from "./App.jsx";
 import { BasicButton } from "./App.jsx";
 import "./index.css";
@@ -81,6 +81,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
+      <Clock />
     </BrowserRouter>
   </React.StrictMode>
 );
