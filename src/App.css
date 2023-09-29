@@ -108,3 +108,9 @@ body {
 .nav li.active {
   background-color: #555;
 }
+#Clock {
+  color: fuchsia;
+}
+#Clock h1 {
+  color: fuchsia;
+}

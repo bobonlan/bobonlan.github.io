@@ -81,7 +81,6 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
-      <Clock />
     </BrowserRouter>
   </React.StrictMode>
 );
