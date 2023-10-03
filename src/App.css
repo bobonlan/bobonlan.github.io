@@ -1,6 +1,8 @@
 #root {
   text-align: center;
   background-color: darkslategrey;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .logo {
@@ -107,10 +109,4 @@ body {
 
 .nav li.active {
   background-color: #555;
-}
-#Clock {
-  color: fuchsia;
-}
-#Clock h1 {
-  color: fuchsia;
 }
