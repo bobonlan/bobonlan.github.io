@@ -2,7 +2,7 @@ import { Welcome } from "./../App.jsx";
 import { BasicButton } from "./../App.jsx";
 import { Clock } from "./../App.jsx";
 import { Spotify } from "./../App.jsx";
-import "./../index.css";
+import "./../App.css";
 export default function Balls() {
   return (
     <>

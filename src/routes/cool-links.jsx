@@ -1,19 +1,42 @@
-import { BasicButton } from "../App";
+import { BasicButton, YoutubeEian1, YoutubeEian2, YoutubeEian3 } from "../App";
+import React, { Component } from "react";
+import Slider from "react-slick"
+import "./../App.css"
+import "./../../node_modules/slick-carousel/slick/slick.css"
+import "./../../node_modules/slick-carousel/slick/slick-theme.css";
 
-export default function Button3() {
+export default class SimpleSlider extends Component {
+  render() {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    };
+    return (
+      <>
+        <h2>Music by Eian Klock</h2>
+        <Slider {...settings}>
+          <div>
+            <YoutubeEian1 />
+          </div>
+          <div>
+            <YoutubeEian2 />
+          </div>
+          <div>
+            <YoutubeEian3 />
+          </div>
+        </Slider>
+      </>
+    );
+  }
+}
+
+export function Button3() {
   return (
     <>
       <h1>Cool Links</h1>
-      <BasicButton
-        buttonName={"Music by Eian"}
-        linkTo={"https://www.youtube.com/@eianklock"}
-      />
-
-      <BasicButton
-        linkTo={"https://youtube.com/shorts/-ocizpRbV0o?si=437OPT1R_lobhtX1"}
-        buttonName={"Oh My God"}
-      />
-      <BasicButton buttonName={"Test Button"} />
     </>
   );
 }

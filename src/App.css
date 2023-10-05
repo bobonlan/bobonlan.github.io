@@ -67,6 +67,7 @@ body {
 .container {
   margin: 1rem;
   text-align: center;
+  width: 100%;
 }
 
 .nav {
@@ -109,4 +110,13 @@ body {
 
 .nav li.active {
   background-color: #555;
+}
+
+.YoutubeBar {
+  align-items: stretch;
+  justify-content: space-between;
+  display: flexbox;
+  gap: 1rem;
+  padding: 0.25rem;
+  margin: 2rem;
 }

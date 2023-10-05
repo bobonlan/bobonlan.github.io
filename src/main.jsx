@@ -6,8 +6,6 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import App, { Clock } from "./App.jsx";
-import { Welcome } from "./App.jsx";
-import { BasicButton } from "./App.jsx";
 import "./index.css";
 import ErrorPage from "./error-page.jsx";
 import Contact, {

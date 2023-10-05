@@ -1,13 +1,7 @@
 import { useState, useEffect } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import * as React from "react";
-import { ChakraProvider } from "@chakra-ui/react";
-import { Flex, Spacer } from "@chakra-ui/react";
-import Navbar from "./Navbar";
-import { optimizedAppearDataAttribute } from "framer-motion";
-import Button1 from "./routes/button1";
+import Navbar from "./Navbar";import Button1 from "./routes/button1";
 import Button2 from "./routes/button2";
 import Button3 from "./routes/cool-links";
 import { Route, Routes } from "react-router-dom";
@@ -61,23 +55,62 @@ export const Clock = () => {
 
   return (
     <div>
-      <h1>{currentTime}</h1>
+      <h1 className="Clock">{currentTime}</h1>
     </div>
   );
 };
 
 export function Spotify() {
   return (
-      <div>
-        <iframe style={{borderRadius: '12px'}}
-        src={"https://open.spotify.com/embed/playlist/2LqNBpgud2LkuHYcA4KPCn?utm_source=generator"}
-        width={"45%"}
-        height={"156rem"}
-        allowFullScreen={"true"}
-        allow={"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"}
-        loading={"lazy"}
-        align={"left"}></iframe>
-      </div>
+        <div>
+          <iframe style={{borderRadius: '12px'}}
+          src={"https://open.spotify.com/embed/playlist/2LqNBpgud2LkuHYcA4KPCn?utm_source=generator"}
+          width={"45%"}
+          height={"156rem"}
+          allowFullScreen={"true"}
+          allow={"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"}
+          loading={"lazy"}
+          align={"left"}></iframe>
+        </div>
     
   );
+}
+
+export function YoutubeEian1() {
+  return (
+      <iframe 
+      width="560px" 
+      height="315px" 
+      src="https://www.youtube.com/embed/skAmLoapFaE?si=jh23hrn2ZKVvat45" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowFullScreen="true"></iframe>
+  )
+}
+
+export function YoutubeEian2() {
+  return (
+      <iframe 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/kKcA-ocLhN4?si=P1YnwBF3PplOPM84" 
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+      allowFullScreen="true">
+      </iframe>
+  )
+}
+export function YoutubeEian3() {
+  return (
+    <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/jPKaiJjR7ts?si=q-ruexBNPOfs7Th6" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowFullScreen="true"></iframe>
+  )
 }
