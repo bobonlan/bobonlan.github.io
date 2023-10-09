@@ -1,42 +1,42 @@
 import { BasicButton, YoutubeEian1, YoutubeEian2, YoutubeEian3 } from "../App";
 import React, { Component } from "react";
-import Slider from "react-slick"
-import "./../App.css"
-import "./../../node_modules/slick-carousel/slick/slick.css"
-import "./../../node_modules/slick-carousel/slick/slick-theme.css";
+import "./../App.css";
+import { Carousel } from "../Components/Carousel/Carousel.jsx";
 
-export default class SimpleSlider extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
-    return (
-      <>
-        <h2>Music by Eian Klock</h2>
-        <Slider {...settings}>
-          <div>
-            <YoutubeEian1 />
-          </div>
-          <div>
-            <YoutubeEian2 />
-          </div>
-          <div>
-            <YoutubeEian3 />
-          </div>
-        </Slider>
-      </>
-    );
-  }
-}
+const Button3 = () => {
+  const videoUrls = [
+    "https://www.youtube.com/embed/skAmLoapFaE?si=jh23hrn2ZKVvat45",
+    "https://www.youtube.com/embed/kKcA-ocLhN4?si=KnGMxdH9KADycI1d",
+    "https://www.youtube.com/embed/jPKaiJjR7ts?si=q-ruexBNPOfs7Th6",
+  ];
 
-export function Button3() {
+  const containerStyles = {
+    maxWidth: "500px",
+    height: "280px",
+    margin: "0 auto",
+  };
+
+  const slides = videoUrls.map((url, index) => (
+    <iframe
+      key={index}
+      width="560"
+      height="315"
+      src={url}
+      title={`YouTube video ${index + 1}`}
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
+  ));
+
   return (
     <>
       <h1>Cool Links</h1>
+      <div style={containerStyles}>
+        <Carousel slides={slides} />
+      </div>
     </>
   );
-}
+};
+
+export default Button3;
