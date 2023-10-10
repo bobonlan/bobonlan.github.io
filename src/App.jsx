@@ -23,13 +23,6 @@ export function App() {
   );
 }
 
-export function Welcome() {
-  return (
-    <h2>
-      Welcome to bobonlan.com. This website will be a hub for all things I do.
-    </h2>
-  );
-}
 export function BasicButton({ buttonName, linkTo }) {
   return (
     <div>
