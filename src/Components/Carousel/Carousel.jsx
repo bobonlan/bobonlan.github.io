@@ -42,7 +42,8 @@ const Carousel = ({ slides }) => {
           cursor: "pointer",
           zIndex: 1,
           backgroundColor: "rgba(0, 0, 0, 0.5)",
-          padding: "10px 20px",
+          padding: "10px 25px",
+          borderRadius: "100%",
         }}
       >
         ❮
@@ -71,7 +72,8 @@ const Carousel = ({ slides }) => {
           cursor: "pointer",
           zIndex: 1,
           backgroundColor: "rgba(0, 0, 0, 0.5)",
-          padding: "10px 20px",
+          padding: "10px 25px",
+          borderRadius: "100%",
         }}
       >
         ❯

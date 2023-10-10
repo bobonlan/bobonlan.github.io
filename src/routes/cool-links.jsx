@@ -31,7 +31,7 @@ const Button3 = () => {
 
   return (
     <>
-      <h1>Cool Links</h1>
+      <h1>Music by Eian</h1>
       <div style={containerStyles}>
         <Carousel slides={slides} />
       </div>
