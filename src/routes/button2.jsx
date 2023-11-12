@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import "./../App.css";
+import { NextJSConfTicket } from "../Components/NextJSConfTicket/NextJSConfTicket";
+import { Holopin } from "../Components/Holopin/Holopin.jsx";
 export default function Button2() {
   return (
     <>
