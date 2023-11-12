@@ -17,8 +17,8 @@ export function Form() {
             Will you check the box?
           </label>
         </fieldset>
+        <button type="submit">Submit</button>
       </form>
-      <button type="submit">Submit</button>
     </div>
   );
 }
