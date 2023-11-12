@@ -18,7 +18,7 @@ export function Form() {
           </label>
         </fieldset>
       </form>
-      <input type="submit" />
+      <button type="submit">Submit</button>
     </div>
   );
 }
