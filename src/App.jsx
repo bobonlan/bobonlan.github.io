@@ -1,6 +1,7 @@
 import "./App.css";
 import * as React from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import Button1 from "./routes/button1";
 import Button2 from "./routes/button2";
 import Button3 from "./routes/cool-links";
@@ -18,6 +19,7 @@ export function App() {
           <Route path="/button2" element={<Button2 />} />
           <Route path="/cool-links" element={<Button3 />} />
         </Routes>
+        <Footer />
       </div>
     </>
   );

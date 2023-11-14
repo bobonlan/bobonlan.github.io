@@ -11,14 +11,6 @@ export default function Balls() {
         <Welcome />
         <Spotify />
         <Clock />
-        <BasicButton
-          buttonName={"twitch.tv"}
-          linkTo={"https://twitch.tv/bobonlan"}
-        />
-        <BasicButton
-          buttonName={"twitter.com"}
-          linkTo={"https://twitter.com/bobonlan"}
-        />
       </div>
     </>
   );
