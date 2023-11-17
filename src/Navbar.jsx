@@ -7,7 +7,7 @@ export default function Navbar() {
         bobonlan.com
       </Link>
       <ul>
-        <CustomLink to="/button1">Button 1</CustomLink>
+        <CustomLink to="/button1">Form</CustomLink>
         <CustomLink to="/cool-links">Music by Eian</CustomLink>
         <CustomLink to="/button2">About</CustomLink>
       </ul>

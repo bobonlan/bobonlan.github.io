@@ -3,7 +3,10 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 export default function Footer() {
   return (
     <nav className="nav2">
-      <h1 className="footerH1">Thanks for the click</h1>
+      <h1 className="footerH1">
+        Thanks for the click<h4>Contact at bobonlanbusiness@gmail.com</h4>
+      </h1>
+
       <ul>
         <CustomLink to="https://github.com/bobonlan" target="_blank">
           GitHub
