@@ -12,7 +12,7 @@ export default function Footer() {
         <CustomLink to="https://twitter.com/bobonlan" target="_blank">
           X, Formerly Known as Twitter
         </CustomLink>
-        <CustomLink to="https://twitch.tv/bobobnlan" target="_blank">
+        <CustomLink to="https://twitch.tv/bobonlan" target="_blank">
           Twitch
         </CustomLink>
         <CustomLink to="https://www.reddit.com/user/bobonlan/" target="_blank">
