@@ -4,7 +4,7 @@ export function Spotify() {
       <iframe
         style={{ borderRadius: "12px" }}
         src={
-          "https://open.spotify.com/embed/playlist/20SHBwsHZpBZFmidW6WCR7?utm_source=generator"
+          "https://open.spotify.com/embed/playlist/0AwDLGemPmt3Khl8yElvPq?utm_source=generator"
         }
         width={"45%"}
         height={"156rem"}

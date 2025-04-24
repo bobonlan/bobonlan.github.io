@@ -7,15 +7,16 @@ export default function Navbar() {
         bobonlan.com
       </Link>
       <ul>
-        <CustomLink to="/button1">Form</CustomLink>
+        <CustomLink to="/form">Form</CustomLink>
         <CustomLink to="/cool-links">Music by Eian</CustomLink>
-        <CustomLink to="/button2">About</CustomLink>
+        <CustomLink to="/about">About</CustomLink>
+        <CustomLink to="/minesweeper">Minesweeper</CustomLink>
       </ul>
     </nav>
   );
 }
 
-function CustomLink({ to, children, ...props }) {
+export function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
 

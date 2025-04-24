@@ -2,9 +2,10 @@ import "./App.css";
 import * as React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Button1 from "./routes/button1";
-import Button2 from "./routes/button2";
+import FormButton from "./routes/form";
+import AboutButton from "./routes/about";
 import Button3 from "./routes/cool-links";
+import MinesweeperButton from "./routes/minesweeperbutton";
 import { Route, Routes } from "react-router-dom";
 import Balls from "./routes/balls";
 
@@ -15,9 +16,10 @@ export function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Balls />} />
-          <Route path="/button1" element={<Button1 />} />
-          <Route path="/button2" element={<Button2 />} />
+          <Route path="/form" element={<FormButton />} />
+          <Route path="/about" element={<AboutButton />} />
           <Route path="/cool-links" element={<Button3 />} />
+          {/*<Route path="/minesweeper" element={<MinesweeperButton />} />*/}
         </Routes>
         <Footer />
       </div>
