@@ -10,7 +10,7 @@ export default function Navbar() {
         <CustomLink to="/form">Form</CustomLink>
         <CustomLink to="/cool-links">Music by Eian</CustomLink>
         <CustomLink to="/about">About</CustomLink>
-        <CustomLink to="/minesweeper">Minesweeper</CustomLink>
+        {/*<CustomLink to="/minesweeper">Minesweeper</CustomLink>*/}
       </ul>
     </nav>
   );
