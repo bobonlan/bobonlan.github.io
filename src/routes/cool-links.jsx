@@ -1,13 +1,13 @@
-import { BasicButton, YoutubeEian1, YoutubeEian2, YoutubeEian3 } from "../App";
+//import { BasicButton, YoutubeEian1, YoutubeEian2, YoutubeEian3 } from "../App";
 import React, { Component } from "react";
 import "./../App.css";
 import { Carousel } from "../Components/Carousel/Carousel.jsx";
 
 const Button3 = () => {
   const videoUrls = [
-    "https://www.youtube.com/embed/skAmLoapFaE?si=jh23hrn2ZKVvat45",
-    "https://www.youtube.com/embed/kKcA-ocLhN4?si=KnGMxdH9KADycI1d",
-    "https://www.youtube.com/embed/jPKaiJjR7ts?si=q-ruexBNPOfs7Th6",
+    "https://www.youtube-nocookie.com/embed/skAmLoapFaE?si=jh23hrn2ZKVvat45",
+    "https://www.youtube-nocookie.com/embed/kKcA-ocLhN4?si=KnGMxdH9KADycI1d",
+    "https://www.youtube-nocookie.com/embed/jPKaiJjR7ts?si=q-ruexBNPOfs7Th6",
   ];
 
   const containerStyles = {

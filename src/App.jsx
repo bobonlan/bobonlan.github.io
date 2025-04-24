@@ -5,7 +5,7 @@ import Footer from "./Footer";
 import FormButton from "./routes/form";
 import AboutButton from "./routes/about";
 import Button3 from "./routes/cool-links";
-import MinesweeperButton from "./routes/minesweeperbutton";
+//import MinesweeperButton from "./routes/minesweeperbutton";
 import { Route, Routes } from "react-router-dom";
 import Balls from "./routes/balls";
 
@@ -38,7 +38,7 @@ export function BasicButton({ buttonName, linkTo }) {
 }
 export default App;
 
-const YoutubeEian1 = () => {
+/*const YoutubeEian1 = () => {
   return (
     <iframe
       width="560px"
@@ -85,3 +85,4 @@ const YoutubeEian3 = () => {
 };
 
 export { YoutubeEian3 };
+*/
