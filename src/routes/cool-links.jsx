@@ -1,41 +1,38 @@
-//import { BasicButton, YoutubeEian1, YoutubeEian2, YoutubeEian3 } from "../App";
-import React, { Component } from "react";
 import "./../App.css";
-import { Carousel } from "../Components/Carousel/Carousel.jsx";
+import { Link } from "react-router-dom";
+import posts from "./../posts.jsx";
 
 const Button3 = () => {
-  const videoUrls = [
-    "https://www.youtube-nocookie.com/embed/skAmLoapFaE?si=jh23hrn2ZKVvat45",
-    "https://www.youtube-nocookie.com/embed/kKcA-ocLhN4?si=KnGMxdH9KADycI1d",
-    "https://www.youtube-nocookie.com/embed/jPKaiJjR7ts?si=q-ruexBNPOfs7Th6",
-  ];
-
-  const containerStyles = {
-    maxWidth: "500px",
-    height: "280px",
-    margin: "0 auto",
-  };
-
-  const slides = videoUrls.map((url, index) => (
-    <iframe
-      key={index}
-      width="560"
-      height="315"
-      src={url}
-      title={`YouTube video ${index + 1}`}
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-  ));
-
   return (
-    <>
-      <h1>Music by Eian</h1>
-      <div style={containerStyles}>
-        <Carousel slides={slides} />
-      </div>
-    </>
+    <div className="page-content">
+      <section className="blog-header">
+        <p className="about-prompt">// blog</p>
+        <h1>Posts</h1>
+        <p>Whatever I'm working on, thinking about, or figured out.</p>
+      </section>
+
+      {posts.length === 0 ? (
+        <p className="no-posts">No posts yet. Check back soon.</p>
+      ) : (
+        <div className="blog-grid">
+          {posts.map((post) => (
+            <Link to={`/blog/${post.slug}`} key={post.slug} className="blog-tile">
+              <div className="blog-tile-meta">
+                <span className="blog-date">{post.date}</span>
+                <span className="blog-tags">
+                  {post.tags.map((t) => (
+                    <span key={t} className="blog-tag">{t}</span>
+                  ))}
+                </span>
+              </div>
+              <h2 className="blog-title">{post.title}</h2>
+              <p className="blog-excerpt">{post.excerpt}</p>
+              <span className="blog-read-more">read more →</span>
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
   );
 };
 

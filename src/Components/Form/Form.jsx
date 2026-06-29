@@ -2,8 +2,13 @@ import React from "react";
 
 export function Form() {
   return (
-    <div className="formNameAndSiteKnowledge">
-      <h1>Please fill out this brief form!</h1>
+    <div className="page-content">
+      <p className="about-prompt">// contact</p>
+      <h1>Get in touch</h1>
+      <p style={{ marginTop: "0.5rem", marginBottom: "2rem" }}>
+        Fill out the form and it'll land in my inbox.
+      </p>
+
       <form
         target="_blank"
         action="https://formsubmit.co/bobonlanbusiness@gmail.com"
@@ -11,44 +16,46 @@ export function Form() {
         className="custom-form"
       >
         <div className="form-section">
-          <fieldset>
+          <fieldset style={{ border: "none", padding: 0 }}>
             <label className="form-label">
               First Name
-              <input type="text" name="FirstName" placeholder="John" required />
+              <input type="text" name="FirstName" placeholder="Jesus" required />
             </label>
-            <label className="form-label">
+            <label className="form-label" style={{ marginTop: "0.75rem", display: "block" }}>
               Middle Name
-              <input type="text" name="MiddleName" placeholder="Fitzgerald" />
+              <input type="text" name="MiddleName" placeholder="H." />
+            </label>
+            <label className="form-label" style={{ marginTop: "0.75rem", display: "block" }}>
+              Last Name
+              <input type="text" name="LastName" placeholder="Christ" required />
+            </label>
+          </fieldset>
+        </div>
+
+        <div className="form-section">
+          <fieldset style={{ border: "none", padding: 0 }}>
+            <label className="form-label">
+              Email Address
+              <input type="text" name="siteKnowledge" placeholder="jesushchrist@google.com" required />
             </label>
             <label className="form-label">
-              Last Name
-              <input
-                type="text"
-                name="LastName"
-                placeholder="Kennedy"
-                required
-              />
+              What are you contacting about?
+              <input type="text" name="siteKnowledge" required />
             </label>
-          </fieldset>
-        </div>
-        <div className="form-section">
-          <fieldset>
-            <label className="form-label" htmlFor="siteKnowledge">
+            <label className="form-label">
               How did you hear about the site?
-              <input
-                type="text"
-                name="siteKnowledge"
-                className="siteKnowledge"
-                required
-              />
+              <input type="text" name="siteKnowledge" required />
             </label>
-            <label className="form-label" htmlFor="box">
-              <input type="checkbox" name="box" id="box" className="box" />
+            {/*<label className="form-label" style={{ marginTop: "0.75rem", display: "flex", alignItems: "center", gap: "0.5rem", flexDirection: "row" }}>
+              <input type="checkbox" name="box" id="box" style={{ width: "auto" }} />
               Will you check the box?
-            </label>
+            </label>*/}
           </fieldset>
         </div>
-        <button type="submit">Submit</button>
+
+        <button type="submit" className="basicButton" style={{ marginTop: "0.5rem" }}>
+          Submit
+        </button>
       </form>
     </div>
   );

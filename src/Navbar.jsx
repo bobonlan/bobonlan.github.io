@@ -7,10 +7,8 @@ export default function Navbar() {
         bobonlan.com
       </Link>
       <ul>
-        <CustomLink to="/form">Form</CustomLink>
-        <CustomLink to="/cool-links">Music by Eian</CustomLink>
-        <CustomLink to="/about">About</CustomLink>
-        {/*<CustomLink to="/minesweeper">Minesweeper</CustomLink>*/}
+        <CustomLink to="/cool-links">blog</CustomLink>
+        <CustomLink to="/form">contact</CustomLink>
       </ul>
     </nav>
   );
@@ -19,7 +17,6 @@ export default function Navbar() {
 export function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-
   return (
     <li className={isActive ? "active" : ""}>
       <Link to={to} {...props}>
